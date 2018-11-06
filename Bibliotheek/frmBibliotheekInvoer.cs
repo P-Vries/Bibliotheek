@@ -16,6 +16,8 @@ namespace Bibliotheek
         //Vars
         //
         int code;
+        bool isLonger = false;
+        bool isOngeldig = false;
         public frmBibliotheekInvoer()
         {
             InitializeComponent();
@@ -28,23 +30,24 @@ namespace Bibliotheek
         {
             string nummer = Boeknummer.ToString().Substring(0, 1);
             return int.Parse(nummer);
+
         }
 
         private void Bereken()
         {
             try { code = int.Parse(txbIn.Text); }
-            catch { MessageBox.Show("Ongeldig Boeknummer!"); }
-            
+            catch { MessageBox.Show("Ongeldig Boeknummer!"); isOngeldig = true; }
+            if (code.ToString().Length > 4) isLonger = true;
             double uit = 0;
-            if (Boektype(code) == 9)
+            if (Boektype(code) == 9 && isLonger == false && isOngeldig == false)
             {
                 if (DateTime.Now >= dateTimePicker1.Value.AddDays(21))
                 {
-                    byte dagen = (byte)(DateTime.Now.DayOfYear - dateTimePicker1.Value.DayOfYear);
+                    int dagen = (DateTime.Now.DayOfYear - dateTimePicker1.Value.DayOfYear);
                     uit = (dagen - 21) * 0.25;
                 }
             }
-            else if (Boektype(code) != 9)
+            else if (Boektype(code) != 9 && isLonger == false && isOngeldig == false)
             {
                 int dagen = (DateTime.Now.DayOfYear - dateTimePicker1.Value.DayOfYear);
                 if (dagen > 30)
@@ -56,10 +59,25 @@ namespace Bibliotheek
                     {
                         tussen += 1;
                         uit = tussen;
+
                     }
                 }
             }
-            MessageBox.Show("U moet €" + uit + " betalen");
+            else if(isLonger == true)
+            {
+                MessageBox.Show("Ongeldige Boeknummer!");
+                uit = 0;
+            }
+            if (uit != 0)
+            {
+                MessageBox.Show("U moet €" + uit.ToString("0.00") + " betalen");
+            }
+            if(uit == 0 && isOngeldig != true)
+            {
+                MessageBox.Show("U hoeft niets te betalen!");
+            }
+            
+
         }
 
         //

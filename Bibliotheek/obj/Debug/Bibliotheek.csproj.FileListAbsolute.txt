@@ -2,9 +2,9 @@ Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\bin\Debug\Bibliotheek.exe
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\bin\Debug\Bibliotheek.pdb
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.csprojAssemblyReference.cache
-Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.Form1.resources
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.Properties.Resources.resources
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.csproj.GenerateResource.cache
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.csproj.CoreCompileInputs.cache
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.exe
 Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.pdb
+Z:\Medewerkers\Pim\C# Projecten\ITVitae\Groene opdrachten\Opdracht 7\Bibliotheek\Bibliotheek\obj\Debug\Bibliotheek.frmBibliotheekInvoer.resources

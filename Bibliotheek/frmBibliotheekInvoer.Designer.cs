@@ -88,7 +88,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "frmBibliotheekInvoer";
-            this.Text = "Form1";
+            this.Text = "Inlever Formulier";
             this.ResumeLayout(false);
             this.PerformLayout();
 
